@@ -1,0 +1,14 @@
+[
+  {
+    "GroupName": "COID19 Negative"
+  },
+  {
+    "GroupName": "COID19 Positive"
+  },
+  {
+    "GroupName": "COID19 Recoverd"
+  },
+  {
+    "GroupName": "COID19 Isolation"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "Colors": {
+    "Favorite": "blue"
+  },
+  "ConnectionStrings": {
+    "PeopleConnectionString": "server=(LocalDb)\\MSSQLLocalDB; Database=PeopleDb; Integrated Security=true; MultipleActiveResultSets=true"
+  }
+}

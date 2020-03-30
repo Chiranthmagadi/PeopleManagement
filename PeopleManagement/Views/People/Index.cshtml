@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Person>
+<h1> People Details</h1>
+@*<p>Count: @Model.Count()</p>
+@foreach(var p in Model)
+{
+<li>@p.FirstName</li>
+
+}*@
+
+<div style="font-family:Arial">
+    <p>
+        @using (@Html.BeginForm("Index", "People", FormMethod.Get))
+    {
+        <b>Search By:</b>
+        @Html.RadioButton("searchBy", "Name", true)  <text>Name</text>
+        @Html.RadioButton("searchBy", "Group")  <text>Group</text><br />
+        @Html.TextBox("search")  <input type="submit" value="search" />
+    }
+    </p>
+    <table class="table table-bordered table-responsive">
+        <tr>
+            <th>First Name </th>
+            <th>Last Name </th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Group</th>
+        </tr>
+        @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.FirstName</td>
+            <td>@d.LastName</td>
+            <td>@d.Email</td>
+            <td>@d.Address</td>
+            <td>@d.Group</td>
+        </tr>
+
+    }
+    </table>
+    </div>
